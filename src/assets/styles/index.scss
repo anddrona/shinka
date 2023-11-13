@@ -1,0 +1,26 @@
+@import 'mixins/fluid-font-size';
+@import 'mixins/fonts';
+// @import 'mixins/visually-hidden';
+@import 'vars';
+@import 'fonts';
+@import 'libs';
+@import 'core';
+
+// Components
+// @import "src/assets/components/modal/callback-modal/modal";
+@import "src/assets/components/swiper/swiper";  
+@import "src/assets/components/form/form"; 
+@import "src/assets/sections/hero/hero";
+@import "src/assets/sections/header/header";
+@import "src/assets/sections/models/models";
+@import "src/assets/components/buttons/buttons";
+@import "src/assets/components/ul/ul";
+@import "src/assets/sections/corghi/corghi";
+@import "src/assets/sections/presence/presence";
+@import "src/assets/sections/tariff/tariff";
+@import "src/assets/sections/offer/offer";
+@import "src/assets/sections/delivery/delivery";
+@import "src/assets/sections/questions/questions";
+@import "src/assets/sections/footer/footer";
+// Sections
+

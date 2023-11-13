@@ -1,0 +1,5 @@
+@import 'mixins/fonts';
+
+@include font-face('MontserratBlack', '../fonts/Montserrat-Black', swap, 400, normal);
+@include font-face('MontserratBold', '../fonts/Montserrat-Bold', swap, 400, normal);
+@include font-face('MontserratMedium', '../fonts/Montserrat-Medium', swap, 400, normal);

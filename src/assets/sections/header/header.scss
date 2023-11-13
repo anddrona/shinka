@@ -1,0 +1,86 @@
+.bg-header-hero {
+    background: url('../img/bg-header-hero-min.jpg') center no-repeat;
+    background-size: cover;
+
+    .header {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        color: $white;
+
+        &__number {
+            @media (max-width: 991.98px) {
+                display: none;
+            }
+        }
+
+        &__row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        &__left {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 392px;
+            gap: 20px;
+
+            .logo img{
+                width: 47px;
+
+                @media (max-width: 768px) {
+                    width: 40px;
+                }
+            }
+            @media (max-width: 768px) {
+                gap: 10px;
+            }
+        }
+
+        &__text {
+            @include fluid-font-size(10px, 14px, 430px, 1920px, 18px);
+            font-weight: 500;
+            line-height: 18px;
+
+            @media (max-width: 991.98px) {
+                max-width: 170px;
+            }
+            @media (max-width: 768px) {
+                line-height: 13px;
+            }
+        }
+
+        &__right {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px
+        }
+
+        &__button {
+            width: 173px;
+            height: 38px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+
+            @media (max-width: 768px) {
+                max-width: 160px;
+            }
+        }
+    }
+
+}
+
+.number {
+    @include fluid-font-size(10px, 14px, 430px, 1920px, 18px);
+    font-weight: 700;
+}

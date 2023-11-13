@@ -1,0 +1,87 @@
+.tariff{
+    background-color: $hero-color;
+    padding-top: 125px;
+    padding-bottom: 125px;
+    &__header{
+        .title{
+            max-width: 450px;
+        }
+        @media (max-width: 769px) {
+        flex-direction: column;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        }
+    }
+    .model-card{
+        max-width: 367px;
+        border-radius: 30px;
+        &__description{
+            margin-top: 0;
+        }
+        @media (max-width: 1300px) {
+            max-width: 302px;
+            height: auto;
+        }
+        @media (max-width: 769px) {
+            max-width: 100%;
+    
+        }
+    }
+    &__title{
+        padding-bottom: 15px;
+        font-family: "MontserratBlack",sans-serif;
+        text-transform: uppercase;
+    }
+    &-description{
+        flex-direction: column;
+        align-items: start;
+        padding-top: 0;
+        
+    }
+    &__text{
+        border-top: 1px #AD494C solid;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .model-card__description{
+        border: 0;
+    }
+    .swiper-slide-transform {
+            height: 500px;
+
+    }
+    &-ul{
+        border-top: 8px solid #fff;
+        width: 100%;
+    }
+    .flip-container{
+        height: 550px;
+        @media (max-width: 1300px) {
+            height: 100%;
+        }
+    }
+    .swiper-wrapper{
+        // height: 550px;
+        @media (max-width: 991px) {
+            overflow:hidden
+        }
+        
+    }
+    .card img{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 769px) {
+        width: 70%;
+    }
+    }
+    
+}
+.title{
+    font-family: "MontserratBlack",sans-serif;
+}
+
+.card img {
+    padding-bottom: 0;
+}

@@ -1,0 +1,120 @@
+.footer{
+    background-color: black;
+    color: $white;
+    padding-top: 125px;
+    padding-bottom: 200px;
+    @media (max-width: 991px){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    @media (max-width: 576px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__row{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        align-items: stretch;
+        @media (max-width: 1200px) {
+            gap: 20px;
+        }
+        @media (max-width: 576px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+.avito{
+    grid-area: avito;
+}
+    .gis{
+        grid-area: gis;
+    }
+    .rusprofile{
+        grid-area: rusprofile;
+    }
+        @media (max-width: 991px) {
+            display: grid;
+            grid-template-areas: "logo gis"
+            "rusprofile avito";
+        }
+    }
+    &__item{
+        padding: 20px;
+        border: 1px solid $white;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        @media (max-width: 1100px) {
+            padding: 15px;
+        }
+        @media (max-width: 576px) {
+            padding: 10px;
+        }
+    }
+    &__img{
+        max-width: 100%;
+        margin-bottom: 10px;
+        img{
+            @media (max-width: 576px) {
+                max-width: 80%;
+            }
+        }
+    }
+    &__text{
+        @include fluid-font-size(14px, 18px, 430px, 1920px, 18px);
+        margin-bottom: 10px;
+        @media (max-width: 576px) {
+            margin-bottom: 5px;
+        }
+    }
+    &__rating{
+        padding: 4px 10px;
+        background-color: $white;
+        font-size: 13px;
+        color: #212529;
+        border-radius: 5px;
+        width: fit-content;
+        font-family: "MontserratBold",sans-serif;
+        @media (max-width: 576px) {
+            margin-bottom: 5px;
+        }
+    }
+    &__logo{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 20px;
+        grid-area: logo;
+        @media (max-width: 1200px) {
+            gap: 10px;
+        }
+        @media (max-width: 991px){
+            justify-content: flex-start;
+        }
+        img{
+            width: 101px;
+            height: 101px;
+            @media (max-width: 1200px) {
+                width: 90px;
+            height: 90px;
+            }
+            @media (max-width: 576px) {
+                width: 55px;
+                height: 55px;
+            }
+        }
+        &-text{
+            text-transform: capitalize;
+            font-size: 25px;
+            @media (max-width: 1200px) {
+                font-size: 20px;
+            }
+            @media (max-width: 576px) {
+                font-size: 15px;
+            }
+            // @include fluid-font-size(18px, 25px, 430px, 1920px, 18px);
+        }
+    }
+}

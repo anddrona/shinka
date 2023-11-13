@@ -1,0 +1,325 @@
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+.corghi {
+    background: #000 url('../img/corghi-bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+    padding-top: 154px;
+    padding-bottom: 261px;
+    overflow: hidden;
+&-gruz{
+    .container{
+        border-top: 1px solid $white;
+    }
+}
+    &-logo {
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $white;
+        text-align: center;
+
+    }
+
+    .container {
+        position: relative;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    &__title {
+        @include fluid-font-size(24px, 32px, 430px, 1920px, 18px);
+        margin-bottom: 16px;
+        font-weight: 900;
+        font-family: 'MontserratBlack', sans-serif;
+        width: 324px;
+    }
+
+    &-slider.swiper-slide {
+        display: flex;
+    }
+
+    &__text {
+        font-size: 16px;
+        max-width: 367px;
+        white-space: pre-line;
+    }
+
+    &-block {
+        max-width: 270px;
+        color: $white;
+        position: absolute;
+        left: 15px;
+
+        h2 {
+            @include fluid-font-size(22px, 32px, 430px, 1920px, 18px);
+            margin-bottom: 15px;
+        }
+
+        &-switches {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .switches {
+                @include fluid-font-size(14px, 16px, 430px, 1920px, 18px);
+                font-family: "MontserratBold", sans-serif;
+                border-color: $yellow;
+                color: $yellow;
+
+                &__active {
+                    background-color: $yellow;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+    &-ul {
+        max-width: 240px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .swiper {
+        position: relative;
+        &-container {
+            max-width: 1020px;
+            justify-content: flex-end;
+        }
+
+        &-pagination-corghi {
+            max-width: 340px;
+            // height: 10px;
+            background-color: transparent;
+            position: absolute;
+            top: auto !important;
+            left: auto !important;
+            bottom: 18px;
+            right: 59px;
+            @media (max-width: 991px) {
+                right: calc(50% + -146px);
+            }
+            @media (max-width: 767px) {
+                right: calc(50% - 175px);
+            }
+            @media (max-width: 400px) {
+                right: calc(50% - 202px);
+            }
+
+            span {
+                background-color: $yellow;
+            }
+        }
+    }
+
+    &__models-container {
+        align-items: flex-start;
+        overflow: hidden;
+        justify-content: flex-end;
+        padding: 100px 0;
+    }
+
+    &-slider {
+        align-items: flex-end;
+        // justify-content: space-between;
+        gap: 50px;
+        // width: 801px;
+        width: 100%;
+        padding-top: 50px;
+
+        @media (max-width: 1300px) {
+            justify-content: flex-end;
+        }
+
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: center;
+            // justify-content: flex-end;
+        }
+
+        &__img {
+            z-index: 100;
+            @media (max-width: 1300px) {
+                max-width: 400px;
+            }
+            @media (max-width: 767px) {
+                margin-top: 100px;
+                // max-width: 300px;
+            }
+            @media (max-width: 400px) {
+                max-width: 320px;
+            }
+           
+        
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            // &::after{
+            //     display: block;
+            //     content: url('../img/circle-corghi.png');
+            //     position: absolute;
+            //     bottom: calc(10px - 12%);
+            //     right: calc(126px - 111%);
+            //     z-index: -2;
+            // }
+        }
+
+        &__description {
+            background-color: $white;
+            border-radius: 30px;
+            padding: 20px 25px;
+            max-width: 340px;
+            color: $black;
+            width: 100%;
+            z-index: 200;
+            // min-width: 340px;
+            position: relative;
+            margin-right: 65px;
+            @media (max-width: 767px) {
+                margin-right: 0;
+            }
+            @media (max-width: 400px) {
+               max-width: 265px;
+                }
+        }
+    }
+
+    .model-card__back-li {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        &:not(:last-child) {
+            margin-bottom: 0;
+            border-bottom: 1px solid #b9ac00;
+        }
+    }
+
+    &-button {
+        background-color: $yellow;
+        @include fluid-font-size(18px, 32px, 430px, 1920px, 18px);
+        font-family: "MontserratBlack", sans-serif;
+        margin-top: 58px;
+    }
+
+
+    div.swiper-button-next::after,
+    div.swiper-button-prev::after {
+        color: $black;
+    }
+}
+
+.swiper-button-prev-corghi.swiper-button-prev {
+    left: 570px;
+}
+
+.swiper-button-prev-corghi,
+.swiper-button-next-corghi {
+    width: 42px;
+    height: 42px;
+    background-color: aliceblue;
+    top: calc(50% + 40px) !important;
+}
+
+.sliderCorghi {
+    position: relative;
+}
+
+.parallax {
+    perspective: 1000px;
+    overflow: hidden;
+    position: relative;
+
+    &__img {
+        width: 100%;
+
+    }
+
+    &__container {
+        height: 390px;
+        transform-style: preserve-3d;
+        transform: translate3d(0px, 0px, 86px) rotate(0.0001deg);
+
+        @media (max-width: 991px) {
+            min-width: 100vw;
+            width: 100%;
+        }
+    }
+
+    // &__back{
+    //     position: absolute;
+    //     left: 0;
+    //     top: calc(var(--index) - (37%));
+    //     // background-image: url('../img/parallax_small.png');
+    //     background-size:contain;
+    //     // transform: translate3d(0px, 0px, 0px);
+    // transform-style: preserve-3d;
+    // // backface-visibility: hidden;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     transform: rotateX(var(--move-y))rotateY(var(--move-x));
+
+
+    // }
+    // &__front{
+    //     position: absolute;
+    //     left: 0;
+    //     // top: calc(var(--index) - (148%));
+    //     top: -555px;
+    //     // background-image: url('../img/parallax_big.png');
+    //     background-size:contain;
+    //     width: 100%;
+    //     background-repeat: no-repeat;
+    //     // transform: translate3d(0px, 0px, 20px);
+    //     transform-style: preserve-3d;
+    //     // backface-visibility: hidden;
+
+    //     transform: rotateX(var(--move-y))rotateY(var(--move-x));
+    // }
+}
+
+.big-line {
+    width: 300%;
+}
+
+.small-line {
+    // width: 200%;
+    width: 170%;
+}
+
+.bg {
+    &-big {
+        // position: absolute;
+        left: -300px !important;
+        top: -421px !important;
+    }
+
+    &-small {
+        // position: absolute;
+        left: -300px !important;
+    }
+}
+
+#scene{
+    @media (max-width: 1800px) {
+        // height: 795px; 
+        min-width: 1800px;
+    }
+    @media (max-width: 1500px) {
+        min-width: 1500px;
+    }
+}
